@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter Room</title>
+	<link rel="shortcut icon" href="logo.png" type="image/x-icon"/>
+	<script src="https://kit.fontawesome.com/d944113372.js" crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="container">
+<button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+	<center>
+		<h1 class="header">	
+			Let's Chat	
+			<sup>
+				<br>
+				<img src="logo.png">
+			</sup>
+		</h1>
+		<h3 class="color_white"></h3>
+		<div class="form-group input_div_room_page">
+			<label>Add Room:</label>
+           <input class="form-control" id="room_id" placeholder="Room id">
+		</div>
+		<button class="btn btn-info" onclick="addroom()">Add Room</button>
+		<section class="text-gray-600 body-font">
+			<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+			  <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+				<img class="object-cover object-center rounded" alt="hero" src="https://thegadgetlover.com/wp-content/uploads/2016/06/Chatrooms.png">
+			  </div>
+			  <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+
+				  
+				</h1>
+				<label style="color:black; font-size: 100px;">Rooms</label><p  class="mb-8 leading-relaxed" style=" color: green; font-weight: bold; font-size: large;"></p>
+				<div class="flex justify-center">
+				  
+				</div>
+			  </div>
+			</div>
+		  </section>
+	
+	</center>
+</div>
+<script src="kwitter_room.js"></script>
+</body>
+</html>
